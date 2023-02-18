@@ -26,6 +26,7 @@ jobs:
 
       - name: Install deps
         run: |
+          sudo apt-get clean
           sudo apt-get update --fix-missing
           sudo apt-get upgrade
           sudo apt install cppcheck
